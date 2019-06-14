@@ -1,0 +1,13 @@
+.index-hero {
+    background: center/cover no-repeat url('https://via.placeholder.com/1920');
+    height: 100vh;
+}
+.index-hero-row {
+    padding-top: 40px;
+}
+.main-nav {
+    background-color: #fff;
+}
+.footer {
+    background-color: #dcdcdc;
+}
