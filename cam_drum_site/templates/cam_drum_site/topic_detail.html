@@ -1,0 +1,17 @@
+{% extends "base_layout.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <h2 class="card-header">
+                    {{ object.title }}
+                </h2>
+                <div class="card-body">
+                    <p class="card-text">
+                        {{ object.text }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

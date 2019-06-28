@@ -56,7 +56,7 @@ ROOT_URLCONF = 'cam_drum_site_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'cam_drum_site/templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'cam_drum_site/templates/cam_drum_site')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {

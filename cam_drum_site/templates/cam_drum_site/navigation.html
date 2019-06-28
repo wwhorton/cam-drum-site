@@ -1,0 +1,12 @@
+    <div class="row navigation-row">
+        <div class="col">
+            <nav class="fixed-top nav justify-content-center main-nav">
+                {% for item in nav_items %}
+                    <a class="nav-link" href="{% url 'detail' item.slug %}">{{ item.title }}</a>
+                    {% if forloop.counter == forloop.revcounter0 or forloop.counter == forloop.revcounter %}
+                        <a class="nav-link" href="/">Logo Goes Here</a>
+                    {% endif %}
+                {% endfor %}
+            </nav>
+        </div>
+    </div>

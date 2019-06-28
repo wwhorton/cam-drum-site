@@ -1,0 +1,29 @@
+{% extends "base_layout.html" %}
+{% block content %}
+    <div class="row index-hero-row">
+        <div class="col">
+            <div class="jumbotron jumbotron-fluid index-hero">
+                <div class="container">
+                    <h1 class="display-4">Fluid jumbotron</h1>
+                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% for item in object_list %}
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <h2 class="card-header">
+                    {{ item.title }}
+                </h2>
+                <div class="card-body">
+                    <p class="card-text">
+                        {{ item.text }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{%  endfor %}
+{% endblock %}
