@@ -8,7 +8,7 @@ class Article(models.Model):
     slug = models.SlugField(default='')
     text = models.TextField()
     blurb = models.CharField(max_length=600)
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='images/', blank=True)
 
 
 class ArticleAdmin(admin.ModelAdmin):
