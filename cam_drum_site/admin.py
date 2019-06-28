@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Topic, TopicAdmin
+from .models import Article, ArticleAdmin
 
 # Register your models here.
-admin.site.register(Topic, TopicAdmin)
+admin.site.register(Article, ArticleAdmin)
