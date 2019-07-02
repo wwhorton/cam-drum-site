@@ -16,3 +16,13 @@ class Article(models.Model):
 
 class ArticleAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
+
+
+class Card(models.Model):
+    title = models.CharField(max_length=200)
+    text = models.CharField(max_length=600)
+    image = models.ImageField(upload_to='images/', blank=True)
+
+    def __str__(self):
+        return self.title
+
