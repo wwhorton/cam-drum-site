@@ -1,17 +1,76 @@
-.index-hero {
-    background: center/cover no-repeat url('https://via.placeholder.com/1920');
-    height: 100vh;
+@font-face {
+    font-family: "Nexa Rust Slab Black Shadow";
+    src: url('fonts/NexaRustSlab-BlackShadow01-Free-webfont.woff2') format('woff2'),
+        url('fonts/NexaRustSlab-BlackShadow01-Free-webfont.woff') format('woff');
 }
-.index-hero-row {
-    padding-top: 40px;
+@font-face {
+    font-family: "Nexa Rust Slab Black";
+    src: url('fonts/NexaRustSans-Black-Free-webfont.woff2') format('woff2'),
+        url('fonts/NexaRustSans-Black-Free-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: "Sanchez Regular";
+    src: url('fonts/sanchez-regular-webfont.woff2') format('woff2'),
+        url('fonts/sanchez-regular-webfont.woff') format('woff');
+}
+h1, h2, h3, h4, h5, h6, a {
+    font-family: "Nexa Rust Slab Black Shadow", fantasy, serif;
+    color: black;
+}
+p {
+    font-family: "Sanchez Regular", serif;
+}
+.index-hero {
+    background: center/cover no-repeat url('images/antique-close-up-drums-730656.jpg');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.index-hero-text-container {
+    background-color: rgba(209, 171, 128, .6);
+    border-radius: 5px;
 }
 .main-nav {
     background-color: #fff;
+    background-color: rgba(132, 94, 51, 1);
+    display: flex;
+    align-items: center;
 
 }
 .footer {
     background-color: #dcdcdc;
+     background-color: rgba(132, 94, 51, 1);
+}
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .navigation-row {
     padding-bottom: 72px;
 }
+.main-content {
+    background-color: #ffffff;
+}
+.card {
+    margin: 30px;
+    border: 1px solid rgba(76,76,76,1);
+}
+.card-header {
+    background-color: rgba(132, 94, 51, 0.4);
+}
+.logo {
+    color: black;
+}
+.space-holder-logo-sm {
+    height: 75px;
+    width: 75px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.space-holder-logo-text {
+    color: white;
+}
+
